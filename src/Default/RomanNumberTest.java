@@ -145,4 +145,11 @@ class RomanNumberTest {
 
 		assertEquals("MMM", roman.convert(3000));
 	}
+	
+	@Test
+	void testConvert_3999_Into_MMMCMXCIX() {
+		RomanNumber roman = new RomanNumber();
+
+		assertEquals("MMMCMXCIX", roman.convert(3999));
+	}
 }
