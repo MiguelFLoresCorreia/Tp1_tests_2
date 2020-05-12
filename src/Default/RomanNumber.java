@@ -8,6 +8,11 @@ public class RomanNumber {
 		
 		int reste = number;
 		
+		while(reste >= 100) {
+			sb.append("C");
+			reste = reste - 100;
+		}
+		
 		while(reste >= 50) {
 			sb.append("L");
 			reste = reste - 50;
