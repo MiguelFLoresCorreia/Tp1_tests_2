@@ -68,4 +68,11 @@ class RomanNumberTest {
 		
 		assertEquals("IV", roman.convert(4));
 	}
+	
+	@Test
+	void testConvert_9_Into_IX() {
+		RomanNumber roman = new RomanNumber();
+		
+		assertEquals("IX", roman.convert(9));
+	}
 }
