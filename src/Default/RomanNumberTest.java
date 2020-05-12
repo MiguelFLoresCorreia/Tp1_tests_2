@@ -117,4 +117,11 @@ class RomanNumberTest {
 
 		assertEquals("D", roman.convert(500));
 	}
+	
+	@Test
+	void testConvert_400_Into_CD() {
+		RomanNumber roman = new RomanNumber();
+
+		assertEquals("CD", roman.convert(400));
+	}
 }

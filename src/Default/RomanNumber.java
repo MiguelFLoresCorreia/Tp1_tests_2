@@ -18,6 +18,11 @@ public class RomanNumber {
 			reste = reste - 500;
 		}
 		
+		while(reste >= 400) {
+			sb.append("CD");
+			reste = reste - 400;
+		}
+		
 		while(reste >= 100) {
 			sb.append("C");
 			reste = reste - 100;
