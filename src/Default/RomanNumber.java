@@ -13,6 +13,11 @@ public class RomanNumber {
 			reste = reste - 1000;
 		}
 		
+		while(reste >= 900) {
+			sb.append("CM");
+			reste = reste - 900;
+		}
+		
 		while(reste >= 500) {
 			sb.append("D");
 			reste = reste - 500;
