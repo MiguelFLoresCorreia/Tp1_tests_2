@@ -8,6 +8,10 @@ public class RomanNumber {
 		
 		int reste = number;
 		
+		if(reste >= 4000) {
+			return "error : out of limit";
+		}
+		
 		while(reste >= 1000) {
 			sb.append("M");
 			reste = reste - 1000;
