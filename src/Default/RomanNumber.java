@@ -6,7 +6,10 @@ public class RomanNumber {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		if(number >= 10) {
+		if(number >= 20) {
+			return "XX";
+		}
+		else if(number >= 10) {
 			return "X";
 		}
 		else {

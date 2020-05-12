@@ -33,4 +33,12 @@ class RomanNumberTest {
 		
 		assertEquals("X", roman.convert(10));
 	}
+	
+	@Test
+	void testConvert_20_Into_XX() {
+		RomanNumber roman = new RomanNumber();
+		
+		assertEquals("XX", roman.convert(20));
+	}
+
 }
