@@ -6,11 +6,10 @@ public class RomanNumber {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		if(number >= 20) {
-			return "XX";
-		}
-		else if(number >= 10) {
-			return "X";
+		if(number >= 10) {
+			for(int i = 0;i < number / 10;i++) {
+				sb.append("X");
+			}
 		}
 		else {
 			for(int i = 0;i < number;i++)
