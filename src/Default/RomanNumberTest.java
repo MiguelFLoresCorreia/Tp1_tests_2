@@ -166,4 +166,11 @@ class RomanNumberTest {
 
 		assertEquals("error : not allowed", roman.convert(0));
 	}
+	
+	@Test
+	void testTryToConvertNegativeNumber() {
+		RomanNumber roman = new RomanNumber();
+
+		assertEquals("error : not allowed", roman.convert(-5));
+	}
 }
