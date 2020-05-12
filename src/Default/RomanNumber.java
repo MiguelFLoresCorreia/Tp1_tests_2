@@ -4,12 +4,13 @@ public class RomanNumber {
 
 	public String convert(int number) {
 		
-		if(number > 1) {
-			return "II";
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i = 0;i < number;i++)
+		{
+			sb.append("I");
 		}
-		else {
-			return "I";
-		}
+		return sb.toString();
 	}
 	
 }
