@@ -6,16 +6,13 @@ public class RomanNumber {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		if(number >= 10) {
-			for(int i = 0;i < number / 10;i++) {
-				sb.append("X");
-			}
+		for(int i = 0;i < number / 10;i++) {
+			sb.append("X");
 		}
-		else {
-			for(int i = 0;i < number;i++)
-			{
-				sb.append("I");
-			}
+	
+		for(int i = 0;i < number % 10;i++)
+		{
+			sb.append("I");
 		}
 		
 		return sb.toString();
