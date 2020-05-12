@@ -17,6 +17,11 @@ public class RomanNumber {
 			sb.append("V");
 			reste = reste - 5;
 		}
+		
+		while(reste >= 4) {
+			sb.append("IV");
+			reste = reste - 4;
+		}
 	
 		while(reste >= 1){
 			sb.append("I");
