@@ -103,4 +103,11 @@ class RomanNumberTest {
 
 		assertEquals("XC", roman.convert(90));
 	}
+	
+	@Test
+	void testConvert_99_Into_XC() {
+		RomanNumber roman = new RomanNumber();
+
+		assertEquals("XCIX", roman.convert(99));
+	}
 }
