@@ -82,4 +82,11 @@ class RomanNumberTest {
 		
 		assertEquals("L", roman.convert(50));
 	}
+	
+	@Test
+	void testConvert_40_Into_XL() {
+		RomanNumber roman = new RomanNumber();
+		
+		assertEquals("XL", roman.convert(40));
+	}
 }
