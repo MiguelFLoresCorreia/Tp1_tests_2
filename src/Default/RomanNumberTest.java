@@ -103,4 +103,11 @@ class RomanNumberTest {
 
 		assertEquals("XCIX", roman.convert(99));
 	}
+	
+	@Test
+	void testConvert_1000_Into_M() {
+		RomanNumber roman = new RomanNumber();
+
+		assertEquals("M", roman.convert(1000));
+	}
 }
