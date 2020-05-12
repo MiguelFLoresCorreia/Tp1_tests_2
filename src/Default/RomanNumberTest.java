@@ -75,4 +75,11 @@ class RomanNumberTest {
 		
 		assertEquals("IX", roman.convert(9));
 	}
+	
+	@Test
+	void testConvert_50_Into_L() {
+		RomanNumber roman = new RomanNumber();
+		
+		assertEquals("L", roman.convert(50));
+	}
 }
