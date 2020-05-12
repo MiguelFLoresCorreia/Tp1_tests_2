@@ -159,4 +159,11 @@ class RomanNumberTest {
 
 		assertEquals("error : out of limit", roman.convert(4000));
 	}
+	
+	@Test
+	void testTryToConvert_0() {
+		RomanNumber roman = new RomanNumber();
+
+		assertEquals("error : not allowed", roman.convert(0));
+	}
 }

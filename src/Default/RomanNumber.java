@@ -12,6 +12,10 @@ public class RomanNumber {
 			return "error : out of limit";
 		}
 		
+		if(reste <= 0) {
+			return "error : not allowed";
+		}
+		
 		while(reste >= 1000) {
 			sb.append("M");
 			reste = reste - 1000;
